@@ -6,7 +6,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 10px solid gold;
     font-family: "Oswald", sans-serif;
 }
 
@@ -52,18 +51,90 @@ body{
 }
 
 .main-container .section-3{
-    border: 5px solid orange;
+    margin: 0;
+    padding: 0;
 }
 
+.main-container .section-3 img{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-self: center;
+}
 .main-container .section-3 .grid-info{
-    border: 5px solid red
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .main-container .section-3 .grid-info .info{
-    border: 5px solid blue;
-    width: 350px;    
+    width: 380px;    
+    margin: 35px;
+    margin: 0 auto;
+    text-align: center;
 }
 
+.main-container .section-3 .grid-info .info h3{
+   font-weight: 300;
+   font-size: 1.8rem;
+}
+
+.main-container .section-3 .grid-info .info p{
+    font-weight: 200;
+    font-size: 1.2rem;
+ }
+
+ .main-container .section-4{
+    box-sizing: border-box;
+    position: relative;
+ }
+ .main-container .section-4 img{
+    max-width: 100%;
+    width: 100%;
+ }
+
+ .main-container .section-4 h2{
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    font-size: 3.5rem;
+    margin-left: 75px;
+    width: 280px;
+ }
+
+ .main-container .section-5{
+    display: flex;
+    align-items: center;
+ }
+
+ .main-container .section-5 img{
+    max-width: 100%;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+ }
+
+ .main-container .section-6{
+    display: flex;
+    align-items: center;
+ }
+
+ .main-container .section-6 img{
+    max-width: 100%;
+    width: 93%;
+    height: auto;
+    margin: 0 auto;
+ }
+
+ .main-container .section-7{
+
+ }
+
+ .main-container .section-7 img{
+    max-width: 100%;
+    height: auto;
+ }
 
 @media screen and (max-width: 1024px) {
   /* Estilos para telas menores de 1024px */
@@ -74,13 +145,98 @@ body{
   }
 
   .main-container .section-2 .dsk{
-    border: 9px solid red;
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .main-container .section-2 .mob{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores de 1024px */
+  .main-container .section-2 h2{
+    font-size: 1.8rem;
+  }
+  .main-container .section-2 p{
+    font-size: 1.2rem;
+  }
+  .main-container .section-2 img{
+    width: 100%;
+    max-width: 100%;
+  }
+  .main-container .section-3 .grid-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .main-container .section-4 h2{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+    /* Estilos para telas menores de 1024px */
+  .main-container .section-2 h2{
+    font-size: 1.8rem;
+  }
+  .main-container .section-2 p{
+    font-size: 1.2rem;
+  }
+  .main-container .section-2 img{
+    width: 100%;
+    max-width: 100%;
+  }
+  .main-container .section-3 .grid-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .main-container .section-4 h2{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+    /* Estilos para telas menores de 1024px */
+  .main-container .section-2 h2{
+    font-size: 1.8rem;
+  }
+  .main-container .section-2 p{
+    font-size: 1.2rem;
+  }
+  .main-container .section-2 img{
+    width: 100%;
+    max-width: 100%;
+  }
+  .main-container .section-3 .grid-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .main-container .section-3 .grid-info h3{
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .main-container .section-3 .grid-info p{
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+  }
+  .main-container .section-4 h2{
     display: none;
   }
 }
